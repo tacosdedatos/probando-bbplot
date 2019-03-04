@@ -5,5 +5,5 @@ LABEL maintainer="chekos <sergio@cimarron.io>"
 
 ## ejecuta algun archivo install.R que encontremos
 RUN R --quiet -e "install.packages(c('dplyr', 'tidyr', 'gapminder', 'ggplot2',  'ggalt', 'forcats', 'R.utils', 'png', 'grid', 'ggpubr', 'scales', 'devtools'), repos = 'http://cran.us.r-project.org')"
-
-RUN R --vanilla "library(devtools) devtools::install_github("ropenscilabs/skimr") q()"
+RUN apt-get install libcurl4-gnutls-dev -y
+RUN R --quiet -e "devtools::install_github("bbc/bbplot")"
