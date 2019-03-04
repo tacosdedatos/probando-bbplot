@@ -8,4 +8,4 @@ RUN R --quiet -e "install.packages(c('dplyr', 'tidyr', 'gapminder', 'ggplot2',  
 USER root
 RUN apt-get install libcurl4-gnutls-dev -y
 USER $NB_UID
-RUN R --quiet -e "devtools::install_github("bbc/bbplot")"
+RUN R --quiet -e "devtools::install_github('bbc/bbplot')"
