@@ -8,3 +8,4 @@ RUN R --quiet -e "install.packages(c('dplyr', 'tidyr', 'gapminder', 'ggplot2',  
 RUN git clone https://github.com/bbc/bbplot.git && \
     R --quiet -e "install.packages('bbplot', repos = NULL, type = 'source')" && \
     rm -rf bbplot
+RUN R --quiet -e "install.packages('gifski', repos = 'http://cran.us.r-project.org')"
