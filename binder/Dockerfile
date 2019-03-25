@@ -21,3 +21,8 @@ RUN R --quiet -e "install.packages('grImport2', repos = 'http://cran.us.r-projec
 RUN git clone https://github.com/rensa/ggflags.git && \
     R --quiet -e "install.packages('ggflags', repos = NULL, type = 'source')" && \
     rm -rf ggflags
+
+# Mueve los datos a donde podamos utilizarlos
+RUN git clone https://github.com/tacos-de-datos/probando-bbplot.git && \ 
+    cp -r probando-bbplot/gapminder_gif gapminder_gif_datos && \ 
+    rm -rf probando-bbplot
