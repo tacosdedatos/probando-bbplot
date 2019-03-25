@@ -10,6 +10,7 @@ RUN git clone https://github.com/bbc/bbplot.git && \
     rm -rf bbplot
 
 USER root
+RUN apt-get update -y
 RUN apt-get install cargo -y
 USER $NB_UID
 RUN git clone https://github.com/r-rust/gifski.git && \
