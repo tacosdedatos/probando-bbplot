@@ -1,0 +1,2 @@
+# Gapminder data
+Estos datos sirven para recrear el artículo [**Como Hacer un GIF en R con `ggplot` y `gganimate`** de _Cienca y Datos_](https://medium.com/datos-y-ciencia/c%C3%B3mo-hacer-un-gif-en-r-con-ggplot-gganimate-b68f234436af)
