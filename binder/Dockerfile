@@ -17,7 +17,7 @@ RUN git clone https://github.com/r-rust/gifski.git && \
     R --quiet -e "install.packages('gifski', repos = NULL, type = 'source')" && \
     rm -rf gifski
 
-RUN R --quiet -e "install.packages('grImport2', repos = 'http://cran.us.r-project.org'"
+RUN R --quiet -e "install.packages('grImport2', repos = 'http://cran.us.r-project.org')"
 RUN git clone https://github.com/rensa/ggflags.git && \
     R --quiet -e "install.packages('ggflags', repos = NULL, type = 'source')" && \
     rm -rf ggflags
